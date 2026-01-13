@@ -1,6 +1,18 @@
 # Machine Learning workflow to thermally correct the band gap of solid solutions
 Implements an accelerated workflow that combines GNNs and MLIPs to apply thermal corrections to the band gap of semiconductor solid solutions.
 
+## Functionalities
+
+The available functionalities are:
+- Solid solution chemical disorder exploration.
+- Vibrational stability determination (at harmonic and anharmonic level).
+- Training dataset generation.
+- MLIP finetuning (MACE).
+- Graph generation.
+- GNN training.
+- Band gap thermal correction.
+- Band gap phonon effect.
+- Necessary electric field estimation.
 
 ## Installation
 
