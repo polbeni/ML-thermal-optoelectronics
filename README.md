@@ -1,5 +1,17 @@
-# Machine Learning workflow to thermally correct the band gap of solid solutions
-Implements an accelerated workflow that combines GNNs and MLIPs to apply thermal corrections to the band gap of semiconductor solid solutions.
+# Machine Learning Workflow for Thermal Band Gap Correction of Solid Solutions
+Considering the thermal effects of lattice vibrations and electron–phonon coupling on materials’ optoelectronic properties is computationally expensive, especially for anharmonic systems. Conventional first-principles methods are typically limited to small systems containing only a few atoms. Consequently, for complex materials such as perovskite solid solutions, computing thermal corrections to their band gaps has been particularly challenging.
+
+We have developed an accelerated workflow to overcome these limitations and enable the study of larger, more complex systems by combining Graph Neural Networks (GNNs) and Machine Learning Interatomic Potentials (MLIPs). In this workflow, GNNs substitute direct DFT band gap calculations, while MLIPs are used for several key tasks: ionic relaxations, exploration of chemical disorder, phonon dispersion calculations, and molecular dynamics (MD) simulations.
+
+By generating a relatively small dataset, typically hundreds to a few thousand perturbed structures, with computed electronic structures, energies, forces, and stresses (using any exchange–correlation functional, such as PBEsol or HSEsol), we can train the GNN and finetune a MLIP specific to the target solid solution system.
+
+The workflow consist of the following steps:
+1. DFT dataset generation.
+2. GNN training and MLIP finetuning.
+3. Exploration of chemical disorder and verification of vibrational stability with the fine-tuned MLIP.
+4. MD simulations with the fine-tuned MLIP at different temperatures for the identified solid solution structures.
+5. Band gap prediction using the trained GNN for MD snapshots at each temperature.
+6. Thermal band gap renormalization, computed as the average band gap over all snapshots at a given temperature.
 
 ## Functionalities
 
