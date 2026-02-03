@@ -1,23 +1,7 @@
 # Pol Benítez Colominas, February 2025
 # Universitat Politècnica de Catalunya
 
-# It computes the phonon dispersion (anharmonic) using phonopy from the forces determined with MACE
-# The workingflow of the script is:
-#       1. Relax the structure with MACE
-#       2. Generate the distorted structures with phonopy for the desired supercell
-#       3. Compute the forces with MACE for all the distorted structures and generate FORCE_SETS
-#       4. Calculate the phonon dispersion (harmonic) for the desired path using phonopy
-#       5. Perform a molecular dynamics at a given temperature with MACE
-#       6. Renormalize phonon frequencies with temperature using DynaPhoPy
-#       7. Calculate the phonon dispersion (anharmonic) using phonopy
-
-# In order to run the script we need to provide the following input files: POSCAR, phonopy.conf
-# We need to provide the following variables: poscar_name, dimension_supercell, device, model, temperature
-#       poscar_name -> name of the initial POSCAR structure (not relaxed)
-#       dimension_supercell -> dimension of the supercell in str format: "2 2 2"
-#       device -> cpu or cuda for mace calculations
-#       model -> MACE model to use (default: large)
-#       temperature -> temperature of the molecular dynamics simulation to renormalize phonon frequencies
+# Determines the FORCE_SETS for a structure
 
 
 import subprocess
