@@ -18,6 +18,7 @@ The workflow consist of the following steps:
 The available functionalities are:
 - Solid solution chemical disorder exploration.
 - Vibrational stability determination (at harmonic and anharmonic level).
+- Run MLIP-MD simulations.
 - Training dataset generation.
 - MLIP finetuning (MACE).
 - Graph generation.
