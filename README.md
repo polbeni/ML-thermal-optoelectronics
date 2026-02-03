@@ -24,7 +24,6 @@ The available functionalities are:
 - GNN training.
 - Band gap thermal correction.
 - Band gap phonon effect.
-- Necessary electric field estimation.
 
 ## Installation
 
