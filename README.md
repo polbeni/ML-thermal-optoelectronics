@@ -48,11 +48,11 @@ Please, take into account that when using the scripts, GPU (with CUDA) will be u
 
 If you use this repository, please cite it as follows:
 ```
-@article{benitez2025physics,
-  title={Why Physics Still Matters: Improving Machine Learning Prediction of Material Properties with Phonon-Informed Datasets},
-  author={Ben{\'\i}tez, Pol and L{\'o}pez, Cibr{\'a}n and Saucedo, Edgardo and Mizoguchi, Teruyasu and Cazorla, Claudio},
-  journal={arXiv preprint arXiv:2511.15222},
-  year={2025}
+@article{benitez2026machine,
+  title={Machine Learning Modeling of Temperature-Dependent Optoelectronic Properties of Anharmonic Solid Solutions},
+  author={Ben{\'\i}tez, Pol and L{\'o}pez, Cibr{\'a}n and Saucedo, Edgardo and Cazorla, Claudio},
+  journal={arXiv preprint arXiv:2602.20778},
+  year={2026}
 }
 ```
 
